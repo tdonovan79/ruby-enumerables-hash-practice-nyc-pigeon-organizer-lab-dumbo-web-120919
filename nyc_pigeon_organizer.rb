@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
   #iterate through categories
   data.each do |categories, value|
     #iterate though attributes
-    attributes.each do |attributes, names|
+    value.each do |attributes, names|
       #iterate thorugh names
       names.each do |name|
         pigeon_data[name][categories] = attributes
