@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         if pigeon_data[name][categories] == nil
           pigeon_data[name][categories] = []
         end
-        #
+        #add attribute to name/category as string
         pigeon_data[name][categories] << attributes.to_s
       end
     end
