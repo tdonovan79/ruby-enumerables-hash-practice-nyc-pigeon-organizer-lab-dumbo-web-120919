@@ -7,17 +7,19 @@ def nyc_pigeon_organizer(data)
     value.each do |attributes, names|
       #iterate thorugh names
       names.each do |name|
+        #if no pigeon name key, create
         if pigeon_data[name] == nil
           pigeon_data[name] = {}
         end
+        #if no pigeon attribute key, create
         if pigeon_data[name][categories] == nil
           pigeon_data[name][categories] = []
         end
+        #
         pigeon_data[name][categories].push(attributes.to_s)
       end
     end
   end
-  puts pigeon_data
   return pigeon_data
 end
 pigeon_data = {
