@@ -2,7 +2,7 @@ def nyc_pigeon_organizer(data)
   #empty hash for pigeon data
   pigeon_data = {}
   #iterate through data
-  data.each
+  data.each do |
   puts pigeon_data
   return pigeon_data
 end
