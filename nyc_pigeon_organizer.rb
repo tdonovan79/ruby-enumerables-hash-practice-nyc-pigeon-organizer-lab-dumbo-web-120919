@@ -1,7 +1,8 @@
 def nyc_pigeon_organizer(data)
   #empty hash for pigeon data
   pigeon_data = {}
-  data
+  #iterate through data
+  data.each
   puts pigeon_data
   return pigeon_data
 end
