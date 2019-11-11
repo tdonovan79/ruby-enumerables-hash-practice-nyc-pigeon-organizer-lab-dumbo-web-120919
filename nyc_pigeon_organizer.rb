@@ -2,9 +2,14 @@ def nyc_pigeon_organizer(data)
   #empty hash for pigeon data
   pigeon_data = {}
   #iterate through categories
-  data.each do |category, attribute|
+  data.each do |categories, attributes|
     #iterate though attributes
-    category.each do |
+    categories.each do |attributes, names|
+      #iterate thorugh names
+      names.each do |name|
+        
+      end
+    end
   end
   puts pigeon_data
   return pigeon_data
