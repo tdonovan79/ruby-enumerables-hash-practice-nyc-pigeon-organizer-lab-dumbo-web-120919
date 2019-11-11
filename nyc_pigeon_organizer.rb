@@ -7,7 +7,13 @@ def nyc_pigeon_organizer(data)
     value.each do |attributes, names|
       #iterate thorugh names
       names.each do |name|
-        pigeon_data[name][categories] = attributes
+        if pigeon_list[name] == nil
+          pigeon_data[name] = {}
+        end
+        if pigeon_data[name][color_gender_lives] == nil
+          pigeon_data[name][color_gender_lives] = []
+        end
+        pigeon_list[name][color_gender_lives].push(stats.to_s)
       end
     end
   end
